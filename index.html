@@ -346,6 +346,10 @@
   .service-card:hover::before { opacity: 1; }
   .service-card:hover { border-color: rgba(201,168,76,0.5); transform: translateY(-3px); }
 
+  a:has(.service-card) { display: block; }
+  a:has(.service-card) .service-card { cursor: pointer; }
+  a:has(.service-card):hover .service-card { border-color: rgba(201,168,76,0.8); transform: translateY(-5px); box-shadow: 0 8px 24px rgba(201,168,76,0.15); }
+
   .service-icon {
     font-size: 1.8rem;
     margin-bottom: 1.2rem;
@@ -605,12 +609,14 @@
         <p class="service-desc">Break through plateaus, eliminate self-sabotage, and unlock peak performance using evidence-based tools built for high-achieving individuals.</p>
         <span class="service-tag">Peak Performance</span>
       </div>
+      <a href="https://www.facebook.com/coachdeardee/" target="_blank" style="text-decoration:none;color:inherit;">
       <div class="service-card">
         <div class="service-icon">🛡️💰</div>
-        <h3 class="service-title"><a href="https://www.facebook.com/coachdeardee/" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px;">Financial Coaching & Income Protection</a></h3>
+        <h3 class="service-title">Financial Coaching & Income Protection</h3>
         <p class="service-desc">Heal your money wounds, shift your financial mindset, and build habits for lasting freedom — while protecting your income and future through smart insurance and financial planning. A complete approach to your financial wellbeing.</p>
         <span class="service-tag">Money & Protection</span>
       </div>
+      </a>
       <div class="service-card">
         <div class="service-icon">🎤</div>
         <h3 class="service-title">Workshops & Speaking Engagements</h3>
@@ -635,12 +641,14 @@
         <p class="service-desc">Join a proven business model through our partner brand. Whether you want to franchise or sell directly, this is your low-risk entry point to business ownership.</p>
         <span class="service-tag">Partner Brand</span>
       </div>
+      <a href="https://www.facebook.com/dearbatanguena/" target="_blank" style="text-decoration:none;color:inherit;">
       <div class="service-card">
         <div class="service-icon">☕</div>
-        <h3 class="service-title"><a href="https://www.facebook.com/dearbatanguena/" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px;">Dear Batangueña</a></h3>
+        <h3 class="service-title">Dear Batangueña</h3>
         <p class="service-desc">Authentic Batangas lomi, chami, and smooth Batangas Liberika Barako coffee served hot or cold — now in Cagayan de Oro, available for Grab delivery, Grab pickup, and walk-in. Comfort food with a Batangas soul.</p>
         <span class="service-tag">Grab & Pick Up · CDO</span>
       </div>
+      </a>
       <div class="service-card">
         <div class="service-icon">🤝</div>
         <h3 class="service-title">Team Building</h3>
