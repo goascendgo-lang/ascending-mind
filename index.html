@@ -524,6 +524,97 @@
   .nav-logo img { height: 38px; width: auto; }
   .nav-logo-wrap { display: flex; align-items: center; gap: 0.7rem; }
   .nav-logo-text { display: flex; flex-direction: column; }
+
+  /* STORE BANNER */
+  .store-banner {
+    background: linear-gradient(135deg, #C9A84C 0%, #E8C97A 40%, #C9A84C 100%);
+    padding: 5rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .store-banner::before {
+    content: '🛍️';
+    font-size: 20rem;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.06;
+    pointer-events: none;
+    line-height: 1;
+  }
+
+  .store-banner-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .store-banner .store-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--deep);
+    opacity: 0.7;
+    margin-bottom: 1rem;
+  }
+
+  .store-banner h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.2rem, 4vw, 3.8rem);
+    font-weight: 600;
+    color: var(--deep);
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+  }
+
+  .store-banner p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--deep);
+    opacity: 0.8;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-store {
+    display: inline-block;
+    background: var(--deep);
+    color: var(--gold-light);
+    padding: 1.1rem 3rem;
+    border-radius: 2px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: 0 6px 24px rgba(26,26,46,0.25);
+  }
+
+  .btn-store:hover {
+    background: #0D0D1F;
+    color: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 32px rgba(26,26,46,0.35);
+  }
+
+  .store-trust {
+    margin-top: 1.8rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--deep);
+    opacity: 0.55;
+  }
+
 </style>
 </head>
 <body>
@@ -538,6 +629,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#coaching">My Approach</a></li>
+    <li><a href="https://supremacy-international.com/store/index.php?ref=marinelle" target="_blank" rel="noopener">Shop</a></li>
     <li><a href="mailto:connect@ascendaxys.com?subject=I Want to Build a Better Life&body=Hi! I would like to know more about your services." class="nav-cta">Work With Me</a></li>
   </ul>
 </nav>
@@ -550,7 +642,7 @@
       <p class="hero-eyebrow" style="margin-bottom:0;">Ascending Mind</p>
     </div>
     <h1 class="hero-headline">Building a Better Life<br><em>Starts With You.</em></h1>
-    <p class="hero-sub">Coaching and strategy for life, financial advisory, consulting, performance coaching, and purposeful growth — one ascending step at a time.</p>
+    <p class="hero-sub">You were built for more. Clarity, strategy, and alignment to help you unlock your potential — in life, finances, and everything that matters.</p>
     <div class="hero-buttons">
       <a href="#services" class="btn-primary">Explore Services</a>
       <a href="mailto:connect@ascendaxys.com?subject=I Want to Build a Better Life&body=Hi! I would like to know more about your services." class="btn-outline">Work With Me</a>
@@ -569,7 +661,7 @@
   <div>
     <p class="section-label">Who I Am</p>
     <h2 class="section-title">More Than a <em>Coach.</em><br>A Fellow Overcomer.</h2>
-    <p class="section-body">I wear many hats — VA recruitment & coaching online business manager, consultant, financial coach, income protection advisor, life & performance coach, franchising & direct selling partner, travel & tours reseller, brand owner, and most importantly, a parent to extraordinary children with autism.</p>
+    <p class="section-body">I wear many hats — VA recruitment & coaching online business manager, consultant, financial coach, income protection advisor, life & performance coach, <a href="https://supremacy-international.com/store/index.php?ref=marinelle" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;">franchising & direct selling</a> partner, travel & tours reseller, brand owner, and most importantly, a parent to extraordinary children with autism.</p>
     <p class="section-body">I work with families, business owners, professionals, breadwinners, VAs, and startup agencies who are ready to take control of their financial future, unlock their full potential, and live with greater purpose, clarity, and alignment.</p>
     <div class="about-badges">
       <span class="badge">Life Coaching</span>
@@ -578,8 +670,8 @@
       <span class="badge">Income Protection</span>
       <span class="badge">VA Recruitment & Coaching</span>
       <span class="badge">Travel & Tours</span>
-      <span class="badge">Franchising</span>
-      <span class="badge">Direct Selling</span>
+      <a href="https://supremacy-international.com/store/index.php?ref=marinelle" target="_blank" rel="noopener" style="text-decoration:none;"><span class="badge">Franchising</span></a>
+      <a href="https://supremacy-international.com/store/index.php?ref=marinelle" target="_blank" rel="noopener" style="text-decoration:none;"><span class="badge">Direct Selling</span></a>
       <span class="badge">Workshops</span>
       <span class="badge">Speaking Engagements</span>
       <span class="badge">Dear Batangueña</span>
@@ -611,16 +703,10 @@
     </div>
     <div class="services-grid">
       <div class="service-card">
-        <div class="service-icon">🌱</div>
-        <h3 class="service-title">Life Coaching</h3>
-        <p class="service-desc">Navigate life transitions, find clarity in chaos, and design a life aligned with your deepest values — whether you're a parent, a professional, or starting over.</p>
-        <span class="service-tag">Life Design</span>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🧠</div>
-        <h3 class="service-title">Performance Coaching</h3>
-        <p class="service-desc">Break through plateaus, eliminate self-sabotage, and unlock peak performance using evidence-based tools built for high-achieving individuals.</p>
-        <span class="service-tag">Peak Performance</span>
+        <div class="service-icon">🌱🧠</div>
+        <h3 class="service-title">Life & Performance Coaching</h3>
+        <p class="service-desc">Navigate life transitions, find clarity in chaos, and design a life aligned with your deepest values — while breaking through plateaus and unlocking peak performance using evidence-based tools built for high-achieving individuals.</p>
+        <span class="service-tag">Life Design · Peak Performance</span>
       </div>
       <a href="https://www.facebook.com/coachdeardee/" target="_blank" style="text-decoration:none;color:inherit;">
       <div class="service-card">
@@ -648,12 +734,22 @@
         <p class="service-desc">Explore the world through our partner brand's curated travel and tour packages. From local getaways to international destinations — book through my personal link.</p>
         <span class="service-tag">Partner Brand</span>
       </div>
+      <a href="https://supremacy-international.com/store/index.php?ref=marinelle" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
       <div class="service-card">
         <div class="service-icon">🛍️</div>
         <h3 class="service-title">Franchising & Direct Selling</h3>
         <p class="service-desc">Join a proven business model through our partner brand. Whether you want to franchise or sell directly, this is your low-risk entry point to business ownership.</p>
         <span class="service-tag">Partner Brand</span>
       </div>
+      </a>
+      <a href="https://supremacy-international.com/store/index.php?ref=marinelle" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
+      <div class="service-card">
+        <div class="service-icon">✨</div>
+        <h3 class="service-title">Wellness & Lifestyle Store</h3>
+        <p class="service-desc">Curated wellness, lifestyle, and health products for dreamers, business owners, leaders, and breadwinners who refuse to settle. Invest in yourself — because your best life is worth it.</p>
+        <span class="service-tag">Shop Now</span>
+      </div>
+      </a>
       <a href="https://www.facebook.com/dearbatanguena/" target="_blank" style="text-decoration:none;color:inherit;">
       <div class="service-card">
         <div class="service-icon">☕</div>
@@ -716,6 +812,18 @@
   </div>
 </section>
 
+
+<!-- STORE BANNER -->
+<section class="store-banner">
+  <div class="store-banner-inner">
+    <p class="store-eyebrow">Partner Store</p>
+    <h2>Ready to Take the First Step<br>Toward Financial Freedom?</h2>
+    <p>Explore our curated partner store — quality products, proven business opportunities, and a direct path to building income on your own terms.</p>
+    <a href="https://supremacy-international.com/store/index.php?ref=marinelle" target="_blank" rel="noopener" class="btn-store">🛍️ Shop the Store Now</a>
+    <p class="store-trust">Trusted Products · Direct Selling Opportunity · Join the Movement</p>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <div style="display:flex;align-items:center;gap:0.8rem;">
@@ -724,6 +832,7 @@
   </div>
   <p>Building a Better Life Starts With You.</p>
   <p>📩 <a href="mailto:connect@ascendaxys.com" style="color:var(--gold);text-decoration:none;">connect@ascendaxys.com</a></p>
+  <p>🛒 <a href="https://supremacy-international.com/store/index.php?ref=marinelle" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;">Visit My Store</a></p>
   <p>© 2026 Ascending Mind. All rights reserved.</p>
 </footer>
 
