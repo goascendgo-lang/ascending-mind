@@ -615,6 +615,111 @@
     opacity: 0.55;
   }
 
+
+  /* FLOATING CTA */
+  .floating-cta {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.6rem;
+  }
+
+  .floating-cta a {
+    background: var(--gold);
+    color: var(--deep);
+    padding: 0.85rem 1.5rem;
+    border-radius: 2px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(201,168,76,0.45);
+    transition: all 0.3s;
+    animation: pulse 2.5s infinite;
+  }
+
+  .floating-cta a:hover {
+    background: var(--deep);
+    color: var(--gold);
+    box-shadow: 0 6px 28px rgba(201,168,76,0.6);
+  }
+
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 4px 20px rgba(201,168,76,0.45); }
+    50% { box-shadow: 0 4px 32px rgba(201,168,76,0.8); }
+  }
+
+  /* HOW IT WORKS */
+  .how-it-works {
+    background: var(--warm);
+    padding: 5rem 4rem;
+    text-align: center;
+  }
+
+  .how-it-works .hiw-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .hiw-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    position: relative;
+  }
+
+  .hiw-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .hiw-number {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--deep);
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .hiw-step h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--deep);
+  }
+
+  .hiw-step p {
+    font-size: 0.88rem;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  .hiw-cta {
+    margin-top: 2.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .floating-cta { bottom: 1.2rem; right: 1.2rem; }
+    .how-it-works { padding: 4rem 1.5rem; }
+  }
+
 </style>
 </head>
 <body>
@@ -644,7 +749,7 @@
     <h1 class="hero-headline">Building a Better Life<br><em>Starts With You.</em></h1>
     <p class="hero-sub">You were built for more. Clarity, strategy, and alignment to help you unlock your potential — in life, finances, and everything that matters.</p>
     <div class="hero-buttons">
-      <a href="#services" class="btn-primary">Explore Services</a>
+      <a href="https://calendar.app.google/gECaqiWKijmZdDfk9" class="btn-primary">📅 Book a Free Call</a>
       <a href="mailto:connect@ascendaxys.com?subject=I Want to Build a Better Life&body=Hi! I would like to know more about your services." class="btn-outline">Work With Me</a>
     </div>
   </div>
@@ -664,17 +769,17 @@
     <p class="section-body">I wear many hats — VA recruitment & coaching online business manager, consultant, financial coach, income protection advisor, life & performance coach, <a href="https://supremacy-international.com/store/index.php?ref=marinelle" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;">franchising & direct selling</a> partner, travel & tours reseller, brand owner, and most importantly, a parent to extraordinary children with autism.</p>
     <p class="section-body">I work with families, business owners, professionals, breadwinners, VAs, and startup agencies who are ready to take control of their financial future, unlock their full potential, and live with greater purpose, clarity, and alignment.</p>
     <div class="about-badges">
-      <span class="badge">Life Coaching</span>
-      <span class="badge">Performance Coaching</span>
-      <span class="badge">Financial Coaching</span>
-      <span class="badge">Income Protection</span>
-      <span class="badge">VA Recruitment & Coaching</span>
-      <span class="badge">Travel & Tours</span>
-      <a href="https://supremacy-international.com/store/index.php?ref=marinelle" target="_blank" rel="noopener" style="text-decoration:none;"><span class="badge">Franchising</span></a>
+      <a href="#services" style="text-decoration:none;"><span class="badge">Life Coaching</span></a>
+      <a href="#services" style="text-decoration:none;"><span class="badge">Performance Coaching</span></a>
+      <a href="https://www.facebook.com/coachdeardee/" target="_blank" rel="noopener" style="text-decoration:none;"><span class="badge">Financial Coaching</span></a>
+      <a href="https://www.facebook.com/coachdeardee/" target="_blank" rel="noopener" style="text-decoration:none;"><span class="badge">Income Protection</span></a>
+      <a href="#services" style="text-decoration:none;"><span class="badge">VA Recruitment & Coaching</span></a>
+      <a href="#services" style="text-decoration:none;"><span class="badge">Travel & Tours</span></a>
+      <a href="https://drive.google.com/file/d/162zWnU_3gPeYBqItmd1c8GsYaFxv9LH9/view?usp=sharing" target="_blank" rel="noopener" style="text-decoration:none;"><span class="badge">Franchising</span></a>
       <a href="https://supremacy-international.com/store/index.php?ref=marinelle" target="_blank" rel="noopener" style="text-decoration:none;"><span class="badge">Direct Selling</span></a>
-      <span class="badge">Workshops</span>
-      <span class="badge">Speaking Engagements</span>
-      <span class="badge">Dear Batangueña</span>
+      <a href="#services" style="text-decoration:none;"><span class="badge">Workshops</span></a>
+      <a href="#services" style="text-decoration:none;"><span class="badge">Speaking Engagements</span></a>
+      <a href="https://www.facebook.com/dearbatanguena/" target="_blank" rel="noopener" style="text-decoration:none;"><span class="badge">Dear Batangueña</span></a>
       <span class="badge">Autism Parent</span>
     </div>
   </div>
@@ -801,12 +906,40 @@
   </div>
 </section>
 
+<!-- HOW IT WORKS -->
+<section class="how-it-works">
+  <div class="hiw-inner">
+    <p class="section-label">Getting Started</p>
+    <h2 class="section-title">Working With Me Is <em>Simple.</em></h2>
+    <div class="hiw-steps">
+      <div class="hiw-step">
+        <div class="hiw-number">1</div>
+        <h4>Send a Message</h4>
+        <p>Email or message me about what you need — coaching, protection, franchising, VA services, or anything else.</p>
+      </div>
+      <div class="hiw-step">
+        <div class="hiw-number">2</div>
+        <h4>Free Discovery Call</h4>
+        <p>We have a quick, no-pressure conversation to understand your goals and which path is the best fit for you.</p>
+      </div>
+      <div class="hiw-step">
+        <div class="hiw-number">3</div>
+        <h4>Start Ascending</h4>
+        <p>We put a plan in motion, tailored to your life — and I walk alongside you every step of the way.</p>
+      </div>
+    </div>
+    <div class="hiw-cta">
+      <a href="https://calendar.app.google/gECaqiWKijmZdDfk9" class="btn-primary">📅 Book Your Free Call Now</a>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="cta" id="contact">
   <div class="cta-inner">
-    <p class="section-label" style="color:var(--gold);">Ready to Begin?</p>
+    <p class="section-label" style="color:var(--gold);">Limited Spots Available</p>
     <h2 class="section-title">Your Better Life<br><em>Starts Today.</em></h2>
-    <p>Ready to build a better life? Simply send us an email at <a href="https://www.facebook.com/coachdeardee/" target="_blank" style="color:var(--gold-light);text-decoration:underline;">connect@ascendaxys.com</a> and tell us what you need. Whether it's coaching, financial protection, a VA team, travel packages, franchise opportunities, a warm bowl of Batangas lomi, or a smooth non-acidic Batangas coffee — we're here for you.</p>
+    <p>I take on a limited number of new clients each month so I can give everyone my full attention. If you're ready to take the first step — just reach out. Tell me what you need, and let's build a plan together.</p>
     <div class="cta-form">
       <a href="mailto:connect@ascendaxys.com?subject=I Want to Build a Better Life&body=Hi! I would like to know more about your services." class="btn-primary">📩 connect@ascendaxys.com</a>
     </div>
@@ -836,6 +969,11 @@
   <p>🛒 <a href="https://supremacy-international.com/store/index.php?ref=marinelle" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;">Visit My Store</a></p>
   <p>© 2026 Ascending Mind. All rights reserved.</p>
 </footer>
+
+<!-- FLOATING CTA -->
+<div class="floating-cta">
+  <a href="https://calendar.app.google/gECaqiWKijmZdDfk9">📅 Book a Free Call</a>
+</div>
 
 </body>
 </html>
